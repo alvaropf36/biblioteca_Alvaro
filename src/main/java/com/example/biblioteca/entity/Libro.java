@@ -1,9 +1,9 @@
 package com.example.biblioteca.entity;
 
 import jakarta.persistence.*;
-
-public class Libro {
-
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
     @Data //Evita definir getter y setters
     @Entity
@@ -21,5 +21,3 @@ public class Libro {
         @Column
         private String autor;
     }
-
-}

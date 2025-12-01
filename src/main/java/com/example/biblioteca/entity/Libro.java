@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
     @Table(name = "libro")
     public class Libro{
         @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY) //Se genera de forma automatica
+        @GeneratedValue(strategy = GenerationType.AUTO) //Se genera de forma automatica
         private Long id; //Clave principal
 
         @Column(nullable = false) //Al ponerlo a posterior, hay que modificar la propiedad

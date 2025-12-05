@@ -54,6 +54,8 @@ pipeline {
             }
         }
 
+        /*
+
         stage('Deploy'){
             steps{
                 bat """
@@ -62,5 +64,7 @@ pipeline {
                 """
             }
         }
+        
+        */
     }
 }

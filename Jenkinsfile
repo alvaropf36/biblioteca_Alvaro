@@ -10,6 +10,20 @@ pipeline {
         stage('Show Messages'){
             steps {
                 bat 'echo "Primer stage del pipeline"'
+                bat 'echo "A continuacion hacemos checkout del proyecto"'
+            }
+        }
+
+        stage('Checkout proyecto'){
+            steps {
+                git branch: 'master',
+                url: 'https://github.com/alvaropf36/biblioteca_Alvaro.git'
+            }
+        }
+
+        stage('Maven clean'){
+            steps {
+                bat 'mvn clean'
             }
         }
     }
